@@ -1,6 +1,6 @@
 nose_x=0;
 nose_y=0;
-leftwrist=0;
+left_wrist=0;
 rightwrist=0;
 difference=0;
 
@@ -20,11 +20,9 @@ function modelLoaded(){
 function gotposes(results){
     if(results.length>0){
         console.log(results);
-        nose_x=results[0].pose.nose.x;
-        nose_y=results[0].pose.nose.y;
-        leftwrist=results[0].pose.leftwrist.x ;
-        rightwrist=results[0].pose.rightwrist.x ;
-        difference=floor(leftwrist-rightwrist);
+        left_wrist = results[0].pose.leftWrist.x;
+        rightwrist = results[0].pose.rightWrist.x;
+        difference = floor(left_wrist-rightwrist);
     }
 }
 
