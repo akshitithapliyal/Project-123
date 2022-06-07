@@ -22,8 +22,8 @@ function gotposes(results){
         console.log(results);
         nose_x=results[0].pose.nose.x;
         nose_y=results[0].pose.nose.y;
-        leftwrist=results[0].pose.leftwrist.x;
-        rightwrist=results[0].pose.rightwrist.x;
+        leftwrist=results[0].pose.leftwrist.x ;
+        rightwrist=results[0].pose.rightwrist.x ;
         difference=floor(leftwrist-rightwrist);
     }
 }
